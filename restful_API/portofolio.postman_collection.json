@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "b8da18e8-557f-41d3-9403-7a6ce48daded",
+		"name": "portofolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Post a new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"soenargo\",\n\t\"password\" : \"sebelas\",\n\t\"address\" : \"Jl. Gajahmada No. 7, Mangkubumi. Sidoarjo.\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/user?",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "user_type",
+									"value": "admin",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTEwNTI5MDcsIm5iZiI6MTU1MTA1MjkwNywianRpIjoiYjliZWYxNjYtNGU0My00MWU4LWI5OTItNTc5N2JhZDU2ODdkIiwiZXhwIjoxNTUxMTM5MzA3LCJpZGVudGl0eSI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnbyIsInBhc3N3b3JkIjoic2ViZWxhcyIsImFkZHJlc3MiOiJKbC4gR2FqYWhtYWRhIE5vLiA3LCBNYW5na3VidW1pLiBTaWRvYXJqby4ifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjMsInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoic29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXMiLCJhZGRyZXNzIjoiSmwuIEdhamFobWFkYSBOby4gNywgTWFuZ2t1YnVtaS4gU2lkb2Fyam8uIn19.0w1lWvCxc06Mozq4EjTLMVFte5JRYvhhBs52Kp3X2w0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Create token admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"fatmajanna\",\n\t\"password\" : \"sembilan\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/login?",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "user_type ",
+									"value": "admin",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create token penjual",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"prasojo\",\n\t\"password\" : \"sepuluh\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create token publik",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"soenargo\",\n\t\"password\" : \"sebelas\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
