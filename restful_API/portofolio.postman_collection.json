@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b8da18e8-557f-41d3-9403-7a6ce48daded",
+		"_postman_id": "3b6f9e87-4fce-4448-a632-0f0b5e91cf5e",
 		"name": "portofolio",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -22,10 +22,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"username\" : \"soenargo\",\n\t\"password\" : \"sebelas\",\n\t\"address\" : \"Jl. Gajahmada No. 7, Mangkubumi. Sidoarjo.\"\n}"
+							"raw": "{\n\t\"username\" : \"mAzmi\",\n\t\"name\" : \"M. Azmi Hilman\",\n\t\"password\" : \"azmi9\",\n\t\"address\" : \"Jalan Kingsford No. 13, Narrabi. Bogor.\"\n}"
 						},
 						"url": {
-							"raw": "{{url}}/user?",
+							"raw": "{{url}}/user",
 							"host": [
 								"{{url}}"
 							],
@@ -35,7 +35,7 @@
 							"query": [
 								{
 									"key": "user_type",
-									"value": "admin",
+									"value": "penjual",
 									"disabled": true
 								}
 							]
@@ -51,7 +51,92 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTEwNTI5MDcsIm5iZiI6MTU1MTA1MjkwNywianRpIjoiYjliZWYxNjYtNGU0My00MWU4LWI5OTItNTc5N2JhZDU2ODdkIiwiZXhwIjoxNTUxMTM5MzA3LCJpZGVudGl0eSI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnbyIsInBhc3N3b3JkIjoic2ViZWxhcyIsImFkZHJlc3MiOiJKbC4gR2FqYWhtYWRhIE5vLiA3LCBNYW5na3VidW1pLiBTaWRvYXJqby4ifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjMsInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoic29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXMiLCJhZGRyZXNzIjoiSmwuIEdhamFobWFkYSBOby4gNywgTWFuZ2t1YnVtaS4gU2lkb2Fyam8uIn19.0w1lWvCxc06Mozq4EjTLMVFte5JRYvhhBs52Kp3X2w0",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE0OTM5MDgsIm5iZiI6MTU1MTQ5MzkwOCwianRpIjoiOTM3NWRlZDQtNGExOS00YzE5LWEyMjUtNjI2NTU2MmY3OTAxIiwiZXhwIjoxNTUxNTgwMzA4LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcl90eXBlIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImZhdG1hamFubmEiLCJwYXNzd29yZCI6InNlbWJpbGFuIiwiYWRkcmVzcyI6IkpsLiBLYWx1dGEgTm8uIDksIEthcmFuZ2Jlc3VraS4gTWFsYW5nLiJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MiwidXNlcl90eXBlIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImZhdG1hamFubmEiLCJwYXNzd29yZCI6InNlbWJpbGFuIiwiYWRkcmVzcyI6IkpsLiBLYWx1dGEgTm8uIDksIEthcmFuZ2Jlc3VraS4gTWFsYW5nLiJ9fQ.yAuspLkSyx5rop18bL23tdK9zejO1c9R45FeH-p1yik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit user profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE0OTQ3OTAsIm5iZiI6MTU1MTQ5NDc5MCwianRpIjoiYTdkMTk0MDQtZjBlYi00MzA4LWIxNmEtZjA4OTA3M2MwZTBkIiwiZXhwIjoxNTUxNTgxMTkwLCJpZGVudGl0eSI6eyJpZCI6NCwidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJudXJ3YWh5dW5pIiwibmFtZSI6IiIsInBhc3N3b3JkIjoieXVuaWFqYSIsImFkZHJlc3MiOiJKbC4gRGV3aSBTYXJ0aWthIE5vLiAxMzFDLCBDYXdhbmcuIEpha2FydGEgVGltdXIuIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjo0LCJ1c2VyX3R5cGUiOiJwdWJsaWsiLCJ1c2VybmFtZSI6Im51cndhaHl1bmkiLCJuYW1lIjoiIiwicGFzc3dvcmQiOiJ5dW5pYWphIiwiYWRkcmVzcyI6IkpsLiBEZXdpIFNhcnRpa2EgTm8uIDEzMUMsIENhd2FuZy4gSmFrYXJ0YSBUaW11ci4ifX0.KPLdMaLMy5HXdGssl_if2quyM0J9o3d3iL1M27v9U_4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Nur Wahyuni\"\n}\n"
+						},
+						"url": {
+							"raw": "{{url}}/user/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user profile for non admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMzk5NDUsIm5iZiI6MTU1MjEzOTk0NSwianRpIjoiM2NlZWI4ODktNGNlMi00YjRlLWJkYmItZDEwN2ZhMDZiNWZmIiwiZXhwIjoxNTUyMjI2MzQ1LCJpZGVudGl0eSI6eyJpZCI6MTksInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoiZHdpa2EiLCJuYW1lIjoiRHdpa2EgQW5kaSBXaWphbmFya28iLCJwYXNzd29yZCI6InF3ZXJ0eSIsImFkZHJlc3MiOiJKYWxhbiBTZWhhdGkgS2luZ3Nmb3JkIE5vLiA3OSwgV3lueWFyZC4gTWFsYW5nLiIsImtvdGEiOiJNYWxhbmcifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjE5LCJ1c2VyX3R5cGUiOiJwdWJsaWsiLCJ1c2VybmFtZSI6ImR3aWthIiwibmFtZSI6IkR3aWthIEFuZGkgV2lqYW5hcmtvIiwicGFzc3dvcmQiOiJxd2VydHkiLCJhZGRyZXNzIjoiSmFsYW4gU2VoYXRpIEtpbmdzZm9yZCBOby4gNzksIFd5bnlhcmQuIE1hbGFuZy4iLCJrb3RhIjoiTWFsYW5nIn19.SjNvKMFXQCaw_ptrFNtJ7FttQtqws6B9N7ZaLEgpLBg",
 									"type": "string"
 								}
 							]
@@ -156,7 +241,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"username\" : \"soenargo\",\n\t\"password\" : \"sebelas\"\n}"
+							"raw": "{\n\t\"username\" : \"nurwahyuni\",\n\t\"password\" : \"yuniaja\"\n}"
 						},
 						"url": {
 							"raw": "{{url}}/login",
@@ -165,6 +250,588 @@
 							],
 							"path": [
 								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "See all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/product?p=1&rp=50&search=rainbow",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product"
+							],
+							"query": [
+								{
+									"key": "tersedia",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "50"
+								},
+								{
+									"key": "name",
+									"value": "baju ",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "baju",
+									"disabled": true
+								},
+								{
+									"key": "kategori",
+									"value": "women",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "rainbow"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMTA5MjAsIm5iZiI6MTU1MjExMDkyMCwianRpIjoiODQwNjQ3NWYtOTUyMS00OGQzLTk4NzYtYzI0MmEzMjI5ZDU0IiwiZXhwIjoxNTUyMTk3MzIwLCJpZGVudGl0eSI6eyJpZCI6MTAsInVzZXJfdHlwZSI6InBlbmp1YWwiLCJ1c2VybmFtZSI6Iml6emFoV2FyZGFoIiwibmFtZSI6Ikl6emFoIEEuIFdhcmRhaCIsInBhc3N3b3JkIjoiYXp6YW0iLCJhZGRyZXNzIjoiSmFsYW4gQmFrZXIgTm8uIDEzMSwgS2Vuc2luZ3Rvbi4gQm9nb3IuIiwia290YSI6IkJvZ29yIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxMCwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoiaXp6YWhXYXJkYWgiLCJuYW1lIjoiSXp6YWggQS4gV2FyZGFoIiwicGFzc3dvcmQiOiJhenphbSIsImFkZHJlc3MiOiJKYWxhbiBCYWtlciBOby4gMTMxLCBLZW5zaW5ndG9uLiBCb2dvci4iLCJrb3RhIjoiQm9nb3IifX0.FxDFAMxmzyVc8bbAheZHckr7CIbBtnSTPies0tyNv1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"kategori\": \"women\",\n\t\"type\": \"kerudung\",\n\t\"name\": \"Pashmina cantik dan menawan\",\n\t\"harga\" : 47000,\n\t\"brand\": \"Izzam & Riz\",\n\t\"detail\": \"Pashmina canti banyak pilihan warna, fashionable sangat cocok untuk dipakai sehari-hari atau keperluan lainnya. Terdapat pilihan warna pastel, merah, coklat, hitam, biru, pink dan abu-abu. Ukuran tersedia dari S sampai L.\",\n\t\"tersedia\": 47\n}"
+						},
+						"url": {
+							"raw": "{{url}}/product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit a product by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE0OTg4MzAsIm5iZiI6MTU1MTQ5ODgzMCwianRpIjoiNmU1YTI0MmUtNGExNS00OTdmLThmZGEtNGNlMjg1YTZmZDEyIiwiZXhwIjoxNTUxNTg1MjMwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSJ9fQ.28Db6Jc8YhmJ_COmkaZ7KJsce9eIU5hmvql8ixOQo-M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"detail\": \"Celana panjang pria cocok untuk ke kantor maupun kegiatan sehari-hari lainnya. Dibuat dari bahan berkualitas dengan harga yang kompetitif. Tersedia warna hitam, abu-abu dan coklat. Ukuran: S, M, L, XL. Silakan menyatakan ukuran dan warna ketika order.\"\n\n}"
+						},
+						"url": {
+							"raw": "{{url}}/product/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all products by penjual",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMjE3NzMsIm5iZiI6MTU1MjEyMTc3MywianRpIjoiMzc3Mzc3MzEtYWZkZC00NmNlLTlkMTktNWM1N2U0OTI1OTkxIiwiZXhwIjoxNTUyMjA4MTczLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSIsImtvdGEiOiJTdXJhYmF5YSJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSIsImtvdGEiOiJTdXJhYmF5YSJ9fQ.Su9OPvlEz7EnP9GEv0LMuoLQ0dtN0LP5wPSSgopXw8I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/product/penjual",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product",
+								"penjual"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit a product by penjual",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMjE3NzMsIm5iZiI6MTU1MjEyMTc3MywianRpIjoiMzc3Mzc3MzEtYWZkZC00NmNlLTlkMTktNWM1N2U0OTI1OTkxIiwiZXhwIjoxNTUyMjA4MTczLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSIsImtvdGEiOiJTdXJhYmF5YSJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoicHJhc29qbyIsIm5hbWUiOiJQcmFzb2pvIFByYXNldHlhIiwicGFzc3dvcmQiOiJqb2pvYWphIiwiYWRkcmVzcyI6IkpsLiBLYWxpbWFudGFuIE5vLiAyLCBLYXJhbmdtYWt1LiBTdXJhYmF5YSIsImtvdGEiOiJTdXJhYmF5YSJ9fQ.Su9OPvlEz7EnP9GEv0LMuoLQ0dtN0LP5wPSSgopXw8I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"harga\": 115000,\n\t\"tersedia\": 50\n}"
+						},
+						"url": {
+							"raw": "{{url}}/product/penjual/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"product",
+								"penjual",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Post a cart ketika pembeli memilih dan melakukan checkout barang",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE1ODI0MjMsIm5iZiI6MTU1MTU4MjQyMywianRpIjoiZjkwNjg4MjEtNmQ3ZS00NTg4LWFlMzYtODU0ZDM3ZWZmM2U0IiwiZXhwIjoxNTUxNjY4ODIzLCJpZGVudGl0eSI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnb0dhbnRlbmciLCJuYW1lIjoiTS4gU29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXNHYW50ZW5nIiwiYWRkcmVzcyI6IkpsLiBHYWphaG1hZGEgTm8uIDcsIE1hbmdrdWJ1bWkuIFNpZG9hcmpvLiIsImtvdGEiOiJTaWRvYXJqbyJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnb0dhbnRlbmciLCJuYW1lIjoiTS4gU29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXNHYW50ZW5nIiwiYWRkcmVzcyI6IkpsLiBHYWphaG1hZGEgTm8uIDcsIE1hbmdrdWJ1bWkuIFNpZG9hcmpvLiIsImtvdGEiOiJTaWRvYXJqbyJ9fQ.wZe18Tbj7mL75Nc9UODMJ_Epv5xGkRcH1zfn8aIh99A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"product_id\" : 3,\n\t\"jumlah\" : 2,\n\t\"detail\" : \"ukuran L warna coklat dan XL warna hijau\",\n\t\"status\" : \"paid\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/cart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MjgzNzMsIm5iZiI6MTU1MTYyODM3MywianRpIjoiZmU5ODQwMWQtZThkZC00NTRiLTg5NGMtYWQ0ZjdhOWMxZTkyIiwiZXhwIjoxNTUxNzE0NzczLCJpZGVudGl0eSI6eyJpZCI6MTUsInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoiUndhdGkiLCJuYW1lIjoiUmFobWF3YXRpIFNhbGFtIiwicGFzc3dvcmQiOiJzYWxhbSIsImFkZHJlc3MiOiJKYWxhbiBEZXdpIFNlamF0aSBOby4gMTI3LCBSYXdhbWFuZ3VuLiBKYWthcnRhLiIsImtvdGEiOiJKYWthcnRhIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxNSwidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJSd2F0aSIsIm5hbWUiOiJSYWhtYXdhdGkgU2FsYW0iLCJwYXNzd29yZCI6InNhbGFtIiwiYWRkcmVzcyI6IkphbGFuIERld2kgU2VqYXRpIE5vLiAxMjcsIFJhd2FtYW5ndW4uIEpha2FydGEuIiwia290YSI6Ikpha2FydGEifX0.AQkzWZjw-QMezMT7djklNpJUsr2zb_hr3eKwYWSiRB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"jumlah\" : 2\n}"
+						},
+						"url": {
+							"raw": "{{url}}/cart/68",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"68"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all carts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE1ODI0MjMsIm5iZiI6MTU1MTU4MjQyMywianRpIjoiZjkwNjg4MjEtNmQ3ZS00NTg4LWFlMzYtODU0ZDM3ZWZmM2U0IiwiZXhwIjoxNTUxNjY4ODIzLCJpZGVudGl0eSI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnb0dhbnRlbmciLCJuYW1lIjoiTS4gU29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXNHYW50ZW5nIiwiYWRkcmVzcyI6IkpsLiBHYWphaG1hZGEgTm8uIDcsIE1hbmdrdWJ1bWkuIFNpZG9hcmpvLiIsImtvdGEiOiJTaWRvYXJqbyJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MywidXNlcl90eXBlIjoicHVibGlrIiwidXNlcm5hbWUiOiJzb2VuYXJnb0dhbnRlbmciLCJuYW1lIjoiTS4gU29lbmFyZ28iLCJwYXNzd29yZCI6InNlYmVsYXNHYW50ZW5nIiwiYWRkcmVzcyI6IkpsLiBHYWphaG1hZGEgTm8uIDcsIE1hbmdrdWJ1bWkuIFNpZG9hcmpvLiIsImtvdGEiOiJTaWRvYXJqbyJ9fQ.wZe18Tbj7mL75Nc9UODMJ_Epv5xGkRcH1zfn8aIh99A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cart?p=1&rp=50&pembeli=Nur Wahyuni",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "50"
+								},
+								{
+									"key": "pembeli",
+									"value": "Nur Wahyuni"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a cart to cancel pemilihan barang untuk beli",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MjE5NjUsIm5iZiI6MTU1MTYyMTk2NSwianRpIjoiYjU0YTA5YzItOWQyOS00NzcxLTk4NDQtYTkzYjExNjA5NDVmIiwiZXhwIjoxNTUxNzA4MzY1LCJpZGVudGl0eSI6eyJpZCI6MTQsInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoieWFzaW4iLCJuYW1lIjoiTS4gWWFzaW4gU2FsYW0iLCJwYXNzd29yZCI6InNhbGFtIiwiYWRkcmVzcyI6IkphbGFuIERld2kgU2FydGlrYSBOby4gMTE3LCBLYWxpIEJhdGEuIEpha2FydGEuIiwia290YSI6Ikpha2FydGEifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjE0LCJ1c2VyX3R5cGUiOiJwdWJsaWsiLCJ1c2VybmFtZSI6Inlhc2luIiwibmFtZSI6Ik0uIFlhc2luIFNhbGFtIiwicGFzc3dvcmQiOiJzYWxhbSIsImFkZHJlc3MiOiJKYWxhbiBEZXdpIFNhcnRpa2EgTm8uIDExNywgS2FsaSBCYXRhLiBKYWthcnRhLiIsImtvdGEiOiJKYWthcnRhIn19.smDc4oAgOiEZTydfq02wyR3COvRHRVRB4gO5aIRohnM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cart/65",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart",
+								"65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all carts by penjual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cart",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all carts by pembeli",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMzk5NDUsIm5iZiI6MTU1MjEzOTk0NSwianRpIjoiM2NlZWI4ODktNGNlMi00YjRlLWJkYmItZDEwN2ZhMDZiNWZmIiwiZXhwIjoxNTUyMjI2MzQ1LCJpZGVudGl0eSI6eyJpZCI6MTksInVzZXJfdHlwZSI6InB1YmxpayIsInVzZXJuYW1lIjoiZHdpa2EiLCJuYW1lIjoiRHdpa2EgQW5kaSBXaWphbmFya28iLCJwYXNzd29yZCI6InF3ZXJ0eSIsImFkZHJlc3MiOiJKYWxhbiBTZWhhdGkgS2luZ3Nmb3JkIE5vLiA3OSwgV3lueWFyZC4gTWFsYW5nLiIsImtvdGEiOiJNYWxhbmcifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjE5LCJ1c2VyX3R5cGUiOiJwdWJsaWsiLCJ1c2VybmFtZSI6ImR3aWthIiwibmFtZSI6IkR3aWthIEFuZGkgV2lqYW5hcmtvIiwicGFzc3dvcmQiOiJxd2VydHkiLCJhZGRyZXNzIjoiSmFsYW4gU2VoYXRpIEtpbmdzZm9yZCBOby4gNzksIFd5bnlhcmQuIE1hbGFuZy4iLCJrb3RhIjoiTWFsYW5nIn19.SjNvKMFXQCaw_ptrFNtJ7FttQtqws6B9N7ZaLEgpLBg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/cart?p=1&rp=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cart"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pop Product",
+			"item": [
+				{
+					"name": "See all pop products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/pop_product",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pop_product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete pop product by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE1ODEwMDcsIm5iZiI6MTU1MTU4MTAwNywianRpIjoiODJjZTZhZmQtNDdmNC00NzdkLWI1ZjItYTMxOWIwMzEwNWVmIiwiZXhwIjoxNTUxNjY3NDA3LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcl90eXBlIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImZhdG1hamFubmEiLCJuYW1lIjoiRmF0bWEgSmFubmEiLCJwYXNzd29yZCI6InNlbWJpbGFuIiwiYWRkcmVzcyI6IkpsLiBLYWx1dGEgTm8uIDksIEthcmFuZ2Jlc3VraS4gTWFsYW5nLiIsImtvdGEiOiJNYWxhbmcifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjIsInVzZXJfdHlwZSI6ImFkbWluIiwidXNlcm5hbWUiOiJmYXRtYWphbm5hIiwibmFtZSI6IkZhdG1hIEphbm5hIiwicGFzc3dvcmQiOiJzZW1iaWxhbiIsImFkZHJlc3MiOiJKbC4gS2FsdXRhIE5vLiA5LCBLYXJhbmdiZXN1a2kuIE1hbGFuZy4iLCJrb3RhIjoiTWFsYW5nIn19.qAx9Wa2omThqM50INcjMqJE19uHWODV5V3zc7FOR0yg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/pop_product/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pop_product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all bought products by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxMzg5NzgsIm5iZiI6MTU1MjEzODk3OCwianRpIjoiZWZjMzY1NjUtNDEzOS00OTMzLWEzOGEtOTk3ZjliNzQ1ZWE3IiwiZXhwIjoxNTUyMjI1Mzc4LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcl90eXBlIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImZhdG1hamFubmEiLCJuYW1lIjoiRmF0bWEgSmFubmEiLCJwYXNzd29yZCI6InNlbWJpbGFuIiwiYWRkcmVzcyI6IkpsLiBLYWx1dGEgTm8uIDksIEthcmFuZ2Jlc3VraS4gTWFsYW5nLiIsImtvdGEiOiJNYWxhbmcifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjIsInVzZXJfdHlwZSI6ImFkbWluIiwidXNlcm5hbWUiOiJmYXRtYWphbm5hIiwibmFtZSI6IkZhdG1hIEphbm5hIiwicGFzc3dvcmQiOiJzZW1iaWxhbiIsImFkZHJlc3MiOiJKbC4gS2FsdXRhIE5vLiA5LCBLYXJhbmdiZXN1a2kuIE1hbGFuZy4iLCJrb3RhIjoiTWFsYW5nIn19.eCEtpf5iFrQ3tIv9ruBDCSKqkSSA8uDjhfd51UMHWOk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/pop_product/admin?p=1&rp=50",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pop_product",
+								"admin"
+							],
+							"query": [
+								{
+									"key": "p",
+									"value": "1"
+								},
+								{
+									"key": "rp",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "See all bought products by penjual",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNDA2NTUsIm5iZiI6MTU1MjE0MDY1NSwianRpIjoiNzBmNDBmZTYtMjQ4OC00Yjg4LThmMmItMjVjN2YzYzgwNjQ0IiwiZXhwIjoxNTUyMjI3MDU1LCJpZGVudGl0eSI6eyJpZCI6OCwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoiYW5zeUdoYXNpIiwibmFtZSI6IkFuc3kgQWxnaGFzaSIsInBhc3N3b3JkIjoiNzg5MTAiLCJhZGRyZXNzIjoiSmFsYW4gS2VydG9yZWpvIE5vLiA4OSwgS2FyYW5nIEFueWFyLiBNYWxhbmcuIiwia290YSI6Ik1hbGFuZyJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6OCwidXNlcl90eXBlIjoicGVuanVhbCIsInVzZXJuYW1lIjoiYW5zeUdoYXNpIiwibmFtZSI6IkFuc3kgQWxnaGFzaSIsInBhc3N3b3JkIjoiNzg5MTAiLCJhZGRyZXNzIjoiSmFsYW4gS2VydG9yZWpvIE5vLiA4OSwgS2FyYW5nIEFueWFyLiBNYWxhbmcuIiwia290YSI6Ik1hbGFuZyJ9fQ.TWFP_NXs6TRI4R1ecfRZIaEj4_JJ8wFIf23aLbGLM8w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/pop_product/admin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pop_product",
+								"admin"
 							]
 						}
 					},
