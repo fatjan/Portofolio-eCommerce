@@ -5,3 +5,4 @@ flask-migrate
 flask-script
 pymysql
 flask-jwt-extended
+semantics3

@@ -50,18 +50,16 @@ def after_request(response):
 
 from .user.resources import bp_user #import bp_person from folder blueprints, user and file resources.py
 from .login.__init__ import bp_login
-# from blueprints.semua.resources import bp_semua
-# from .ulasan.resources import bp_review
-# from blueprints.harga.resources import bp_harga
-# from blueprints.daerah.resources import bp_daerah
+from .product.resources import bp_product
+from .cart.resources import bp_cart
+from .pop_product.resources import bp_pop_product
 
 
-# app.register_blueprint(bp_semua, url_prefix='/semua')
-# app.register_blueprint(bp_review, url_prefix='/ulasan')
 app.register_blueprint(bp_user, url_prefix='/user')
 app.register_blueprint(bp_login, url_prefix='/login')
-# app.register_blueprint(bp_harga, url_prefix='/harga')
-# app.register_blueprint(bp_daerah, url_prefix='/daerah')
+app.register_blueprint(bp_product, url_prefix='/product')
+app.register_blueprint(bp_cart, url_prefix='/cart')
+app.register_blueprint(bp_pop_product, url_prefix='/pop_product')
 
 db.create_all()
 
