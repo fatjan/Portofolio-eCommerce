@@ -6,7 +6,7 @@ from flask_restful import fields
 class Products(db.Model):
     __tablename__ = "product"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    kategori = db.Column(db.String(255), nullable=False) #tipe product, contoh: men, women, kids
+    kategori = db.Column(db.String(255), nullable=False) #kategori product, contoh: men, women, accessories
     type = db.Column(db.String(255), nullable=False) #tipe product, contoh: sepatu, baju, celana
     name = db.Column(db.String(255), nullable=False) #nama product, contoh: kerudung pasmina
     harga = db.Column(db.Integer, nullable=False) #harga barang per item
