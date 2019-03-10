@@ -42,7 +42,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="top_nav_left">Welcome to our website. Happy Shopping! </div>
+              <div class="top_nav_left">Welcome to our website. Selamat berjualan! </div>
             </div>
             <div class="col-md-6 text-right">
               <div class="top_nav_right">
@@ -78,10 +78,18 @@
               <nav class="navbar">
                 <ul class="navbar_menu">
                   <li><a href="index.html">home</a></li>
-                  <li><a href="#">shop</a></li>
-                  <li><a href="#">promotion</a></li>
-                  <li><a href="#">pages</a></li>
-                  <li><a href="#">blog</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Categories
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="categories_women.html">Women</a>
+                        <a class="dropdown-item" href="categories_accessories.html">Accessories</a>
+                        <a class="dropdown-item" href="categories_men.html">Men</a>
+                      </div>
+                    </li>
+                  <li><a href="#">best sellers</a></li>
                   <li><a href="contact.html">contact</a></li>
                 </ul>
                 <ul class="navbar_user">
@@ -121,12 +129,20 @@
               <li><a href="register_penjual.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sell</a></li>
             </ul>
           </li>
-          <li class="menu_item"><a href="#">home</a></li>
-          <li class="menu_item"><a href="#">shop</a></li>
-          <li class="menu_item"><a href="#">promotion</a></li>
-          <li class="menu_item"><a href="#">pages</a></li>
-          <li class="menu_item"><a href="#">blog</a></li>
-          <li class="menu_item"><a href="#">contact</a></li>
+          <li class="menu_item"><a href="index.html">home</a></li>
+          <li class="menu_item has-children">
+							<a href="#">
+								Categories
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="menu_selection">
+								<li><a href="categories_women.html"><i class="fa" aria-hidden="true"></i>Women</a></li>
+								<li><a href="#"><i class="fa" aria-hidden="true"></i>Accessories</a></li>
+								<li><a href="#"><i class="fa" aria-hidden="true"></i>Men</a></li>
+							</ul>
+						</li>
+          <li class="menu_item"><a href="#">best sellers</a></li>
+          <li class="menu_item"><a href="contact.html">contact</a></li>
         </ul>
       </div>
     </div>
@@ -166,6 +182,16 @@
                           <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp"
                             placeholder="Enter Password">
                         </div>
+                        <div class="form-group">
+                            <label for="Address">Address</label>
+                            <input type="address" name="address" id="address" class="form-control" aria-describedby="emailHelp"
+                              placeholder="Enter Address">
+                          </div>
+                          <div class="form-group">
+                              <label for="City">City</label>
+                              <input type="city" name="city" id="city" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter City">
+                            </div>
                         <div class="col-md-12 text-center mb-3">
                           <a href="index.html">
                             <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Sell Your Stuffs For Free</button>
@@ -191,7 +217,7 @@
 
 
     <!-- Benefit -->
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="benefit">
       <div class="container">
         <div class="row benefit_row">
