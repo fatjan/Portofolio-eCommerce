@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Fatimah Shop</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Colo Shop Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header trans_300">
+
+			<!-- Top Navigation -->
+
+			<div class="top_nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="top_nav_left">Welcome to our website. Happy Shopping! </div>
+						</div>
+						<div class="col-sm-3 col-md-3 search1">
+							<form class="navbar-form" role="search">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+									<div class="input-group-btn">
+										<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-3 text-right">
+							<div class="top_nav_right">
+								<ul class="top_nav_menu">
+									<li class="account">
+										<a href="#">
+											My Account
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<ul class="account_selection">
+											<li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+											<li><a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+											<li><a href="register_penjual.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sell</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+
+			<div class="main_nav_container">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-right">
+							<div class="logo_container move">
+								<img src="images/bunga.png">
+								<a href="#">Fatimah<span style="color:pink">shop</span></a>
+							</div>
+							<nav class="navbar">
+								<ul class="navbar_menu">
+									<li><a href="index.html">home</a></li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+										 aria-haspopup="true" aria-expanded="false">
+											Categories
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="categories_women.html">Women</a>
+											<a class="dropdown-item" href="categories_accessories.html">Accessories</a>
+											<a class="dropdown-item" href="categories_men.html">Men</a>
+										</div>
+									</li>
+
+									<li><a href="#">best sellers</a></li>
+									<li><a href="contact.html">contact</a></li>
+								</ul>
+								<ul class="navbar_user">
+									<!-- <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
+									<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+									<li class="checkout">
+										<a href="cart.html">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											<!-- <span id="checkout_items" class="checkout_items">2</span> -->
+										</a>
+									</li>
+								</ul>
+								<div class="hamburger_container">
+									<i class="fa fa-bars" aria-hidden="true"></i>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="fs_menu_overlay"></div>
+		<div class="hamburger_menu">
+			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="hamburger_menu_content text-right">
+				<ul class="menu_top_nav">
+
+					<li class="menu_item has-children">
+						<a href="#">
+							My Account
+							<i class="fa fa-angle-down"></i>
+						</a>
+						<ul class="menu_selection">
+							<li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+							<li><a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+						</ul>
+					</li>
+					<li class="menu_item"><a href="#">home</a></li>
+					<li class="menu_item has-children">
+							<a href="#">
+								Categories
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="menu_selection">
+								<li><a href="categories_women.html"><i class="fa" aria-hidden="true"></i>Women</a></li>
+								<li><a href="#"><i class="fa" aria-hidden="true"></i>Accessories</a></li>
+								<li><a href="#"><i class="fa" aria-hidden="true"></i>Men</a></li>
+							</ul>
+						</li>
+					<li class="menu_item"><a href="#">best sellers</a></li>
+					<li class="menu_item"><a href="#">contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Slider -->
+
+		<div class="main_slider" style="background-image:url(images/step.jpg)">
+			<div class="container fill_height">
+				<div class="row align-items-center fill_height">
+					<div class="col">
+						<div class="main_slider_content back_main_slider">
+							<h6>Spring / Summer Collection 2019</h6>
+							<h1>Get up to 30% Off New Collections</h1>
+							<div class="red_button shop_now_button shop_now"><a href="#">shop now</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Banner -->
+
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="banner_item align-items-center" style="background-image:url(images/women27.jpg)">
+							<div class="banner_category">
+								<a href="categories_women.html">women's</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item align-items-center" style="background-image:url(images/banner_2.jpg)">
+							<div class="banner_category">
+								<a href="categories.html">accessories</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="banner_item align-items-center" style="background-image:url(images/pria1.jpg)">
+							<div class="banner_category">
+								<a href="categories.html">men's</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- New Arrivals -->
+
+		<div class="new_arrivals">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="section_title new_arrivals_title">
+							<h2>New Arrivals</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col text-center">
+						<div class="new_arrivals_sorting">
+							<ul class="arrivals_grid_sorting clearfix button-group filters-button-group">
+								<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center active is-checked"
+								 data-filter="*">all</li>
+								<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".women">women's</li>
+								<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".accessories">accessories</li>
+								<li class="grid_sorting_button button d-flex flex-column justify-content-center align-items-center" data-filter=".men">men's</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
+
+							<!-- Product 1 -->
+
+							<div class="product-item men">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/single_3.jpg" alt="">
+									</div>
+									<div class="favorite favorite_left"></div>
+									<!-- <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div> -->
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Pocket cotton sweatshirt. Elegant for men.</a></h6>
+										<div class="product_price">Rp 250.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 2 -->
+
+							<div class="product-item women">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/cewe1.jpeg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju wanita muslimah. Chick, modern, cool tone. Corak putih.</a></h6>
+										<div class="product_price">Rp 250.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 3 -->
+
+							<div class="product-item women">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/baju.jpg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju kaos muslimah. Nyaman dipakai untuk keperluan
+												sehari-hari.</a></h6>
+										<div class="product_price">Rp 120.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 4 -->
+
+							<div class="product-item accessories">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/product_4.png" alt="">
+									</div>
+									<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Sling bag modern. Ringan, banyak kantong. Muat untuk banyak
+												barang.</a></h6>
+										<div class="product_price">Rp 175.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 5 -->
+
+							<div class="product-item women">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/rok1.jpg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Rok muslimah nan trendy, ga transparan. Nyaman dipakai.</a></h6>
+										<div class="product_price">Rp 180.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 6 -->
+
+							<div class="product-item accessories">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/tas2.jpg" alt="">
+									</div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="#single.html">Tas tangan elegan. Ringan, enak dipakai. Chick dan trendy.</a></h6>
+										<div class="product_price">Rp 135.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 7 -->
+
+							<div class="product-item women">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/black.png" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju kaos muslimah yang fashionable, trendy dan nyaman
+												dipakai.</a></h6>
+										<div class="product_price">Rp 210.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 8 -->
+
+							<div class="product-item accessories">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/product_8.png" alt="">
+									</div>
+									<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Dompet chick nan cantik. Ada resleting untuk duit koin.</a></h6>
+										<div class="product_price">Rp 150.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 9 -->
+
+							<div class="product-item men">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/koko5.jpg" alt="">
+									</div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju muslim pria. Lengan pendek. Menawan dan nyaman dipakai.</a></h6>
+										<div class="product_price">Rp 110.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 10 -->
+
+							<div class="product-item men">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/koko4.jpg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju muslimah pria, lengan panjang. Nyaman dipakai, ga transparan.</a></h6>
+										<div class="product_price">Rp 150.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 11 -->
+
+							<div class="product-item men">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/koko57.jpg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju muslimah pria, trendy dan kekinian. Nyaman dipakai.</a></h6>
+										<div class="product_price">Rp 165.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 12 -->
+
+							<div class="product-item women">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/kaoskeren.png" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Baju kaos muslimah yang fashionable, trendy dan nyaman
+												dipakai.</a></h6>
+										<div class="product_price">Rp 210.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 13 -->
+
+							<div class="product-item accessories">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/dompet.jpg" alt="">
+									</div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="#single.html">Dompet pria elegan. Chick dan trendy. Tersedia pilihan warna.</a></h6>
+										<div class="product_price">Rp 115.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+							<!-- Product 14 -->
+
+							<div class="product-item men">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/celanapria.jpg" alt="">
+									</div>
+									<div class="favorite"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="single.html">Celana panjang pria, trendy dan kekinian. Nyaman dipakai.</a></h6>
+										<div class="product_price">Rp 185.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+							<!-- Product 15 -->
+
+							<div class="product-item accessories">
+								<div class="product product_filter">
+									<div class="product_image">
+										<img src="images/taspria.jpg" alt="">
+									</div>
+									<div class="favorite favorite_left"></div>
+									<div class="product_info">
+										<h6 class="product_name"><a href="#single.html">Tas pria elegan, unik, berbahan kulit. Modern dan trendy.</a></h6>
+										<div class="product_price">Rp 115.000</div>
+									</div>
+								</div>
+								<div class="red_button add_to_cart_button"><a href="#">add to cart</a></div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Best Sellers -->
+
+		<div class="best_sellers">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="section_title new_arrivals_title">
+							<h2>Best Sellers</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="product_slider_container">
+							<div class="owl-carousel owl-theme product_slider">
+
+								<!-- Slide 1 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item">
+										<div class="product discount">
+											<div class="product_image">
+												<img src="images/taswanita.jpg" alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>- % 13.8</span></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Handbag nan cantik dan elegan. Diskon hampir 14%</a></h6>
+												<div class="product_price">Rp 250.000<span>Rp 290.000</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 2 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item women">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/rok3.jpg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Rok muslimah. <br>Stretchy and comfortable.</a></h6>
+												<div class="product_price">Rp 180.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 3 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item men">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/koko3.jpg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Kemeja pria lengan panjang. Super trendy.</a></h6>
+												<div class="product_price">Rp 125.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 4 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item accessories">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/taspria.jpg" alt="">
+											</div>
+											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Tas pria elegan, unik, berbahan kulit.</a></h6>
+												<div class="product_price">Rp 115.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 5 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item women men">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/celanapria.jpg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Men's pants with style. <br>Super trendy.</a></h6>
+												<div class="product_price">Rp 185.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 6 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item accessories">
+										<div class="product discount">
+											<div class="product_image">
+												<img src="images/product_6.png" alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>- % 24</span></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Awesome-looking glasses for gorgous you.</a></h6>
+												<div class="product_price">Rp 220.000<span>Rp 290.000</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 7 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item men">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/bajupria.jpg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Baju pria menawan nan fashionable</a></h6>
+												<div class="product_price">Rp 150.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 8 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item accessories">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/product_8.png" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Dompet chick nan cantik dan elegan.</a></h6>
+												<div class="product_price">Rp 150.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 9 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item men">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/rok2.jpg" alt="">
+											</div>
+											<div class="favorite favorite_left"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Rok wanita elegan dan modern.</a></h6>
+												<div class="product_price">Rp 210.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slide 10 -->
+
+								<div class="owl-item product_slider_item">
+									<div class="product-item men">
+										<div class="product">
+											<div class="product_image">
+												<img src="images/kemejalangsing.jpeg" alt="">
+											</div>
+											<div class="favorite"></div>
+											<div class="product_info">
+												<h6 class="product_name"><a href="single.html">Kemeja pria best-fitted. Cool and trendy.</a></h6>
+												<div class="product_price">Rp 80.000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slider Navigation -->
+
+							<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+								<i class="fa fa-chevron-left" aria-hidden="true"></i>
+							</div>
+							<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Benefit -->
+
+		<div class="benefit">
+			<div class="container">
+				<div class="row benefit_row">
+					<div class="col-lg-4 benefit_col">
+						<div class="benefit_item d-flex flex-row align-items-center">
+							<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+							<div class="benefit_content">
+								<h6>Cash On Delivery</h6>
+								<p>The Internet Tend To Repeat</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 benefit_col">
+						<div class="benefit_item d-flex flex-row align-items-center">
+							<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+							<div class="benefit_content">
+								<h6>45 days return</h6>
+								<p>Making it Look Like Readable</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 benefit_col">
+						<div class="benefit_item d-flex flex-row align-items-center">
+							<div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+							<div class="benefit_content">
+								<h6>opening all week</h6>
+								<p>8AM - 09PM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Newsletter -->
+
+		<div class="newsletter">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+							<h4>Newsletter</h4>
+							<p>Subscribe to our newsletter and get 20% off your first purchase</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<form action="post">
+							<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+								<input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+								<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+							<ul class="footer_nav">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer_nav_container">
+							<!-- <div class="cr">©2018 All Rights Reserverd. This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
