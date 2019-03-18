@@ -6,6 +6,7 @@ from ..product import *
 from ..pop_product import *
 from blueprints import db
 from flask_jwt_extended import jwt_required, get_jwt_claims
+import datetime
 
 bp_cart = Blueprint('cart', __name__)
 api = Api(bp_cart)
@@ -80,8 +81,11 @@ class CartResource(Resource):
         harga = qry_product.harga #harga satuan barang dari table product.
         parser.add_argument('jumlah', location='json')
         parser.add_argument('detail', location='json')
-        parser.add_argument('status', location='json')
+        # parser.add_argument('status', location='json')
         args = parser.parse_args() #this becomes str_serialized
+        created_at = datetime.datetime.now().strftime("%c")
+        updated_at = datetime.datetime.now().strftime("%c")
+        status = 'paid'
         if qry_product.kota == get_jwt_claims()['kota']: #kalau kota pembeli dan penjual sama, ongkir = 9000 per item, kalau beda, ongkir = 15000 per item
             ongkir = 9000 * int(args['jumlah'])
         else:
@@ -89,7 +93,8 @@ class CartResource(Resource):
         total_harga = harga * int(args['jumlah']) + ongkir #total harga = harga satuan barang * jumlah barang + ongkos kirim (ongkir)
         address = get_jwt_claims()['address']
         kota = get_jwt_claims()['kota']
-        cart_new = Carts(None, pembeli, item, harga, args['product_id'], args['jumlah'], args['detail'] , ongkir, total_harga, args['status'], address, kota)
+        #masukin created_at and updated_at di table n di cart_new
+        cart_new = Carts(None, pembeli, item, harga, args['product_id'], args['jumlah'], args['detail'] , ongkir, total_harga, 'not yet paid', address, kota)
         db.session.add(cart_new) #insert the input data into the database
         db.session.commit() 
         if cart_new.status == 'paid':
@@ -106,7 +111,8 @@ class CartResource(Resource):
             else: 
                 qry_pop_product.terjual += int(args['jumlah'])
                 db.session.commit()
-        return marshal(cart_new, Carts.response_field), 200, {'Content-Type': 'application/json'}   
+        # return marshal(cart_new, Carts.response_field), 200, {'Content-Type': 'application/json'}  
+        return {"code": 200, "message": "OK", "data": marshal(cart_new, Carts.response_field)}, 200, {'Content-Type': 'application/json'} 
     
     @jwt_required #if pembeli wants to change their cart details, e.g.: the cart status was previously "not yet paid"
     #and then changed to "paid", then the transaction becomes successful and the amount of bought items will be included in the pop_products jumlah terbeli.
@@ -161,6 +167,9 @@ class CartResource(Resource):
         elif status_before_edit == "paid": 
             return 'Cart with id number = %d is already paid and cannot be edited' % id, 404, {'Content-Type': 'application/json'}
         return 'Cart with that id number is not found', 404, {'Content-Type': 'application/json'}
+
+        
+
 
     @jwt_required #delete user is only for admin if any users do some violation of use.  
     #or if the user itself wants to delete profile due to their own willingness to delete their profile.
