@@ -6,6 +6,7 @@ from ..product import *
 from ..pop_product import *
 from blueprints import db
 from flask_jwt_extended import jwt_required, get_jwt_claims
+import datetime
 
 bp_cart = Blueprint('cart', __name__)
 api = Api(bp_cart)
@@ -82,6 +83,8 @@ class CartResource(Resource):
         parser.add_argument('detail', location='json')
         # parser.add_argument('status', location='json')
         args = parser.parse_args() #this becomes str_serialized
+        created_at = datetime.datetime.now().strftime("%c")
+        updated_at = datetime.datetime.now().strftime("%c")
         status = 'paid'
         if qry_product.kota == get_jwt_claims()['kota']: #kalau kota pembeli dan penjual sama, ongkir = 9000 per item, kalau beda, ongkir = 15000 per item
             ongkir = 9000 * int(args['jumlah'])
@@ -90,6 +93,7 @@ class CartResource(Resource):
         total_harga = harga * int(args['jumlah']) + ongkir #total harga = harga satuan barang * jumlah barang + ongkos kirim (ongkir)
         address = get_jwt_claims()['address']
         kota = get_jwt_claims()['kota']
+        #masukin created_at and updated_at di table n di cart_new
         cart_new = Carts(None, pembeli, item, harga, args['product_id'], args['jumlah'], args['detail'] , ongkir, total_harga, 'not yet paid', address, kota)
         db.session.add(cart_new) #insert the input data into the database
         db.session.commit() 

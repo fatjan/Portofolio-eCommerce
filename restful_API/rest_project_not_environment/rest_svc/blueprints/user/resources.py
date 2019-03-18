@@ -40,16 +40,11 @@ class UserResource(Resource):
             rows = []
             for row in qry.limit(args['rp']).offset(rumus_offset).all():
                 rows.append(marshal(row, Users.response_field))
-            # if get_jwt_claims()['user_type'] == 'admin':
-            return rows, 200, {'Content-Type': 'application/json'}
-        # elif get_jwt_claims()['user']:
-        #     return {'message': 'Sorry, this page is not accessible'}, 404, {'Content-Type': 'application/json'}
+            return {"status":"200 OK", "message": "all users are on display", "users": rows}, 200, {'Content-Type': 'application/json'}
         else:
             id = get_jwt_claims()['id']
             qry = Users.query.get(id) #select * from where id = id
-            # if qry != None and id == get_jwt_claims()['id']:
-            return marshal(qry, Users.response_field), 200, {'Content-Type': 'application/json'}   
-            # return {'status': 'not found', 'message': 'you can only see your profile details'}, 404, {'Content-Type': 'application/json'}
+            return {"status": "200 OK", "message": "Your user profile is on display", "user": marshal(qry, Users.response_field)}, 200, {'Content-Type': 'application/json'}   
             #penjual and publik can only see their own user profile
 
     def post(self): #for everyone to register and login        
